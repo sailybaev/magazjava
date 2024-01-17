@@ -71,7 +71,7 @@ public class Main {
         int year = scanner.nextInt();
         System.out.print("Price: ");
         double price = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         Car car = new Car(make, model, year, price);
         dealership.addCarToInventory(car);
@@ -86,7 +86,7 @@ public class Main {
         String contact = scanner.nextLine();
         System.out.print("Budget: ");
         double budget = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         Customer customer = new Customer(name, contact, budget);
         dealership.addCustomer(customer);
@@ -107,8 +107,7 @@ public class Main {
 
     private static void makeSale(Scanner scanner) {
         System.out.println("Enter sale details:");
-        // Get car, customer, and salesperson details...
-        // Implement your logic here using dealership.makeSale(...)
+
     }
 
     private static void displayInventory() {
